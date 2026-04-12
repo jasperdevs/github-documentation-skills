@@ -11,12 +11,12 @@ Write README files that feel intentional. Minimal is the default. Prefer a small
 
 1. Inspect the repository before writing. Read the manifest, scripts, entrypoints, test setup, existing docs, and any current README material. Do not invent commands, features, or support claims.
 2. Decide the shape from the product type. Libraries need install and usage. Apps need setup, run, and visual context. CLIs need commands and examples. Internal tools can stay shorter.
-3. Build the smallest complete README. The default order is a centered title block, a short summary, a brief overview, setup or installation, usage, and only the extra sections the repository genuinely earns.
+3. Build the smallest complete README. The default shape is a centered title block, one short summary paragraph, and only the install or usage material a reader actually needs.
 4. Compress the draft. Remove generic feature dumps, redundant headings, and sections that only repeat what the file tree already says.
 
 ## Default Length
 
-Aim for the shortest README that still lets a new reader understand the project and start using it. Most repos do not need five long sections, a developer guide, and a roadmap in the same file.
+Aim for the shortest README that still lets a new reader understand the project and start using it. Most repos only need a title, one paragraph, one command block, and one usage example.
 
 Expand only when a reader would otherwise be blocked, confused, or likely to misuse the project.
 
@@ -54,13 +54,15 @@ Only include an image slot when a visual would materially speed up understanding
 
 ## Section Decisions
 
-Write a short overview when the repository needs context beyond the summary line. Focus on the problem, the angle, and the scope in two to four sentences.
+Write at most one short overview paragraph when the summary line is not enough. If the title block and one sentence already do the job, skip the overview entirely.
 
 Include installation or setup only when the repository exposes real commands. Favor one happy-path example over a matrix of package managers unless the project already supports many officially.
 
+Include usage only when a reader needs an example beyond the install or run command itself.
+
 Include development or contribution notes only if the repository has a credible contributor flow and a reader needs that information in the README. If there is no tested workflow, or if the material belongs in separate docs, leave it out.
 
-Add optional sections only when either the repository already exposes the information or a first-time reader would be blocked without it. If neither is true, leave the section out.
+Add optional sections only when leaving them out would make the README unclear, unsafe, or incomplete for first use. If neither is true, leave the section out.
 
 When the repository already has a README, keep the strongest material and rewrite around it instead of flattening everything into a new template.
 
