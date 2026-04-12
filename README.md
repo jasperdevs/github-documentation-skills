@@ -23,13 +23,3 @@ Install one skill only if you want:
 npx skills add jasperdevs/github-documentation-skills --skill readme-generator
 npx skills add jasperdevs/github-documentation-skills --skill changelog-generator
 ```
-
-## Use
-
-```text
-$readme-generator rewrite this repo README so it is tighter, cleaner, and uses tables only where they help
-```
-
-```text
-$changelog-generator turn the latest release work into a short unreleased section
-```
