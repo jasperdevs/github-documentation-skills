@@ -2,11 +2,24 @@
 
 Use this file as a palette, not a checklist. Start plain and stay short.
 
-Most repos need a centered title block, one paragraph, one install block, and one usage example. Stop there unless a reader would be blocked without more.
+Most repos need a title, one sharp sentence, one install block, and one usage example. Stop there unless a reader would be blocked without more.
 
 Use lowercase only for the project title when it fits. Keep section headings in normal Title Case or sentence case unless the repo already uses a different system.
 
 Use an image only when the project is meaningfully visual. If the real asset does not exist yet, leave a placeholder comment and tell the user to replace it.
+
+Use one clear short description at the top. Do not add an overview that merely repeats it. Add a follow-up paragraph only if it adds audience, motivation, tradeoffs, or background.
+
+Make the opening answer four questions fast:
+
+- What is this?
+- Does it solve my problem?
+- Can I use it?
+- Can I trust it?
+
+Use a cognitive funnel: identity first, proof second, install and usage next, deeper details later.
+
+For libraries and tools, the README should work as an abstraction layer: a reader should not need to inspect the source to understand whether and how to use it.
 
 Use the smallest Markdown feature that improves scan speed:
 
@@ -23,6 +36,19 @@ Use the smallest Markdown feature that improves scan speed:
 | Inline HTML | Centering or image layout improves the intro without taking over the file |
 
 Keep the first screen useful. Prefer one strong example over several shallow ones. Drop developer-only sections unless they are required for setup, contribution, or safe use.
+
+Shape the README to the repo:
+
+- Library/tool: install plus usage first, plus requirements, license, and trust signals when they matter
+- App/site/extension: visual proof plus quickstart
+- CLI: commands plus output
+- Starter/template: preview, quickstart, features, and references
+- Cookbook/examples: TOC, reproducible run instructions, and local READMEs where needed
+- Curated list: TOC, contribution guidance, and clear scope
+
+Prefer a GIF or demo link over a static screenshot when motion explains the product materially better.
+
+Avoid ASCII repo trees and directory maps for most READMEs. They usually duplicate what the repository view already shows. Use them only when structure is the product, the project is unusually navigation-heavy, or the user asked for that format.
 
 Cut repeated information between the summary, overview, table, and usage. If a section only proves that the repo has files, delete it.
 
@@ -42,6 +68,10 @@ Use the common big-repo sections only when they clearly earn their place:
 
 Badges should earn their space. A short, relevant row is useful. A decorative pile is not.
 
+If a project has meaningful platform or dependency limits, say them plainly near setup or compatibility instead of forcing users to discover them the hard way.
+
 Star-history charts belong near the bottom, not the hero area.
+
+If a visual is present, it should accelerate understanding, not carry the README by itself.
 
 If you need support details beyond this guide, read [github-markdown-docs.md](github-markdown-docs.md).

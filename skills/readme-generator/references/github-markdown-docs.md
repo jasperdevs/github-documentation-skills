@@ -17,11 +17,18 @@ Use these official GitHub Docs pages when you need to verify whether a formattin
 ## Quick map
 
 - Use basic syntax first.
+- GitHub automatically shows an outline for Markdown files with two or more headings, so a manual table of contents is optional for short READMEs.
+- Use relative links for local files and images so cloned repositories and branch views keep working.
 - Use a table when a comparison would otherwise become repetitive bullets.
+- Leave a blank line before a Markdown table or GitHub will not render it correctly.
 - Use a details block when content is real but optional.
-- Use an alert only when the note is important enough to isolate.
-- Use a diagram only when one short paragraph cannot explain the workflow cleanly.
+- Use an alert only when the note is important enough to isolate. GitHub recommends one or two per article and warns against stacking them.
+- Use a diagram only when one short paragraph cannot explain the workflow cleanly. Mermaid, GeoJSON, TopoJSON, and ASCII STL are supported in Markdown files.
 - Use GitHub workflow badges or Shields badges only when they communicate real status.
+- Workflow badges default to the default branch. Private-repo badges cannot be embedded on external sites.
+- Use `<details>` with a `<summary>` label for optional setup or deep notes.
+- Use footnotes for minor caveats. Footnotes are supported in Markdown files but not in wikis.
+- Use `<picture>` only when responsive image behavior matters enough to justify inline HTML.
 - Use the common star-history chart near the bottom for public repos when social proof or growth context matters.
 
 ## Common snippets
