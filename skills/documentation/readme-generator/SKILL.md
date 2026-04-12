@@ -1,22 +1,23 @@
 ---
 name: readme-generator
-description: Draft or rewrite GitHub README.md files for repositories, libraries, apps, CLIs, and internal tools. Use when Codex needs to inspect a codebase, shape a stronger README structure, center a mostly lowercase project title when it fits, add image placeholders for screenshots or diagrams, and produce concise project documentation that stays minimal by default without flattening useful Markdown features like tables, alerts, or details blocks.
+description: Draft or rewrite GitHub README.md files for repositories, libraries, apps, CLIs, and internal tools. Use when Codex needs to inspect a codebase, shape a stronger README structure, center a mostly lowercase project title when it fits, add image placeholders for screenshots or diagrams, and produce concise project documentation that stays minimal by default while still using useful GitHub Markdown features such as tables, alerts, details blocks, task lists, diagrams, footnotes, images, and links when they improve clarity.
 ---
 
 # README Generator
 
-Write README files that feel intentional. Minimal is the default. Prefer a small number of strong sections, short paragraphs, and GitHub-native formatting used with restraint.
+Write README files that feel edited, not templated. Minimal is the default, but not at the cost of clarity.
 
 ## Working Pass
 
 1. Inspect the repository before writing. Read the manifest, scripts, entrypoints, test setup, existing docs, and any current README material. Do not invent commands, features, or support claims.
 2. Decide the shape from the product type. Libraries need install and usage. Apps need setup, run, and visual context. CLIs need commands and examples. Internal tools can stay shorter.
-3. Build the smallest complete README. The default shape is a centered title block, one short summary paragraph, and only the install or usage material a reader actually needs.
-4. Compress the draft. Remove generic feature dumps, redundant headings, and sections that only repeat what the file tree already says.
+3. Before adding richer formatting, read [references/github-readme-patterns.md](references/github-readme-patterns.md) and [references/github-markdown-docs.md](references/github-markdown-docs.md).
+4. Build the smallest complete README. The default shape is a centered title block, one short summary paragraph, and only the install or usage material a reader actually needs.
+5. Compress the draft. Remove generic feature dumps, redundant headings, and sections that only repeat what the file tree already says.
 
 ## Default Length
 
-Aim for the shortest README that still lets a new reader understand the project and start using it. Most repos only need a title, one paragraph, one command block, and one usage example.
+Aim for the shortest README that still lets a new reader understand the project and start using it. Most repos only need a title, one paragraph, one install block, and one usage example.
 
 Expand only when a reader would otherwise be blocked, confused, or likely to misuse the project.
 
@@ -28,7 +29,7 @@ Center the title and short tagline for most GitHub-facing READMEs. HTML is fine 
 
 Prefer prose over bullet spam. Use lists only when the content is genuinely list-shaped. Keep the tone technical and calm. Avoid marketing adjectives, filler claims, long throat-clearing intros, and essay-length explanations.
 
-Use badges, tables, alerts, details blocks, footnotes, Mermaid diagrams, and inline HTML when they make the README faster to scan or shorter overall. Read [references/github-readme-patterns.md](references/github-readme-patterns.md) before reaching for them.
+Use tables, alerts, details blocks, footnotes, diagrams, task lists, badges, images, and inline HTML when they make the README faster to scan or shorter overall. If a richer element does not improve comprehension, cut it.
 
 ## Title Block
 
@@ -60,11 +61,23 @@ Include installation or setup only when the repository exposes real commands. Fa
 
 Include usage only when a reader needs an example beyond the install or run command itself.
 
-Use tables when they compress comparisons, commands, options, environments, or compatibility notes better than prose. Use alerts or details blocks when they reduce clutter or isolate caveats. Do not add Markdown flourishes that do not improve clarity.
+Use tables when they compress comparisons, commands, options, environments, compatibility notes, or feature differences better than prose.
+
+Use alerts when a warning or caveat is important enough to isolate.
+
+Use details blocks when setup is optional or would otherwise bloat the default path.
+
+Use task lists for setup checklists or short roadmaps only when checkboxes genuinely improve scanning.
+
+Use footnotes for small caveats that would otherwise interrupt a sentence.
+
+Use diagrams only when a workflow, architecture, or data flow is hard to explain in one paragraph.
 
 Include development or contribution notes only if the repository has a credible contributor flow and a reader needs that information in the README. If there is no tested workflow, or if the material belongs in separate docs, leave it out.
 
 Add optional sections only when leaving them out would make the README unclear, unsafe, or incomplete for first use. If neither is true, leave the section out.
+
+When several formatting options could work, choose the smallest one that improves comprehension. A short table is better than four repetitive bullets. A collapsed details block is better than forcing optional setup into the default path.
 
 When the repository already has a README, keep the strongest material and rewrite around it instead of flattening everything into a new template.
 
@@ -74,10 +87,13 @@ Confirm that every command exists, every linked path is real, every section earn
 
 Leave explicit placeholders only for facts the repository cannot reveal on its own. If a placeholder is visual, ask the user to replace it with a real image after generation.
 
+If the README uses advanced formatting, make sure each element earns its place. Rich Markdown should reduce clutter, not create it.
+
 ## Avoid
 
 - Do not turn the README into a Markdown feature demo.
 - Do not write a mini-docs site when a short README would do the job.
 - Do not open with a giant feature checklist.
 - Do not mirror generic SaaS landing-page language.
+- Do not repeat the same information in the summary, overview, table, and usage example.
 - Do not keep sections for development, roadmap, contributing, acknowledgments, or license unless the repository actually benefits from them.

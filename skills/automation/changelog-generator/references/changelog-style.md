@@ -14,6 +14,14 @@ The changelog should read like a tight handoff between developers, not a marketi
 - Merge near-duplicate commits into one entry.
 - Skip invisible cleanup unless it changes how someone uses, tests, deploys, or integrates with the project.
 
+## What to skip by default
+
+- docs-only edits
+- test-only edits
+- CI-only edits
+- dependency bumps with no visible effect
+- internal refactors that do not change use, integration, or operations
+
 ## Ordering
 
 - Breaking changes first.
@@ -51,4 +59,18 @@ Stronger:
 
 ```markdown
 - add placeholder image comments for missing screenshots
+```
+
+Weak:
+
+```markdown
+- fix multiple issues with release output
+- improve changelog wording
+- clean up duplicated entries
+```
+
+Stronger:
+
+```markdown
+- dedupe overlapping release entries and tighten final wording
 ```
