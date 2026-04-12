@@ -26,6 +26,20 @@ Keep the first screen useful. Prefer one strong example over several shallow one
 
 Cut repeated information between the summary, overview, table, and usage. If a section only proves that the repo has files, delete it.
 
+Use the common big-repo sections only when they clearly earn their place:
+
+| Section | Add it when |
+| --- | --- |
+| Quick links | The repo has docs, demo, API, examples, community, or issue destinations worth jumping to immediately |
+| Why / Why not | The reader needs a sharper value proposition or tradeoff framing |
+| Compatibility matrix | Platform, runtime, browser, or version support changes adoption decisions |
+| Examples | The product is not obvious from install alone |
+| Troubleshooting / FAQ | Setup friction is common enough to justify a short rescue section |
+| Contributing / Security / Support / License | Public users need those links in the README, even if full policy lives elsewhere |
+| Benchmarks | Performance is a real differentiator and there is measured data |
+| Ecosystem / Integrations | Adapters, plugins, frameworks, or companion packages matter |
+| Docs split | The README is getting too heavy and deeper material should move elsewhere |
+
 Badges should earn their space. A short, relevant row is useful. A decorative pile is not.
 
 Star-history charts belong near the bottom, not the hero area.

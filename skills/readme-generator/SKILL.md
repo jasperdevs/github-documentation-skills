@@ -63,6 +63,8 @@ Include usage only when a reader needs an example beyond the install or run comm
 
 Use tables when they compress comparisons, commands, options, environments, compatibility notes, or feature differences better than prose.
 
+Use a quick-links row only when the repo has meaningful destinations such as docs, demo, website, API reference, examples, Discord, or issue tracker, and the reader benefits from jumping there immediately.
+
 Use badges when they add real signal near the top of the README, such as CI status, package version, license, coverage, or release channel. Skip vanity badge piles.
 
 Use alerts when a warning or caveat is important enough to isolate.
@@ -77,11 +79,29 @@ Use diagrams only when a workflow, architecture, or data flow is hard to explain
 
 Use a star-history chart only for public repositories where project momentum or community growth is relevant. Put it near the bottom of the README, usually under a `Star History` heading, and prefer the common `star-history.com` image-link pattern.
 
+Use a short `Why` or `Why not` section only when the category is crowded, the tradeoffs matter, or the reader would not quickly understand why this project exists.
+
+Use a compatibility matrix only when runtime, platform, browser, version, or environment support materially affects adoption.
+
+Use an examples section when the install command is not enough to teach first use. Keep it to one to three strong examples.
+
+Use troubleshooting or FAQ only when setup friction is common enough that a short section will save users time.
+
+Use contributing, security, support, and license sections briefly for public repos when the reader needs those links in the README. If they can live better in dedicated docs, keep the README version short.
+
+Use benchmarks only when performance is a real selling point and the repo has measured data worth showing.
+
+Use ecosystem or integrations only when the project has adapters, plugins, supported frameworks, or companion packages that materially change adoption decisions.
+
+Use a docs split rule when the README is starting to carry too much detail. The README should orient, install, and prove value quickly; deep guides can move to `/docs`, a website, or dedicated files.
+
 Include development or contribution notes only if the repository has a credible contributor flow and a reader needs that information in the README. If there is no tested workflow, or if the material belongs in separate docs, leave it out.
 
 Add optional sections only when leaving them out would make the README unclear, unsafe, or incomplete for first use. If neither is true, leave the section out.
 
 When several formatting options could work, choose the smallest one that improves comprehension. A short table is better than four repetitive bullets. A collapsed details block is better than forcing optional setup into the default path.
+
+When deciding whether to add a section, ask one question first: does this help a reader understand, adopt, trust, or evaluate the project faster? If not, leave it out.
 
 When the repository already has a README, keep the strongest material and rewrite around it instead of flattening everything into a new template.
 
@@ -103,4 +123,5 @@ If badges or a star-history chart are included, verify that the links resolve an
 - Do not stack a wall of low-signal badges across the top.
 - Do not mirror generic SaaS landing-page language.
 - Do not repeat the same information in the summary, overview, table, and usage example.
+- Do not add `Why`, compatibility, FAQ, benchmarks, ecosystem, or security sections just because large repos often have them.
 - Do not keep sections for development, roadmap, contributing, acknowledgments, or license unless the repository actually benefits from them.
