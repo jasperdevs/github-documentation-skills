@@ -2,6 +2,8 @@
 
 <p align="center"><em>Two skills for tighter GitHub READMEs and terse changelogs.</em></p>
 
+---
+
 ## Skills
 
 | Skill | Purpose | [skills.sh](https://skills.sh/jasperdevs/github-documentation-skills) |
