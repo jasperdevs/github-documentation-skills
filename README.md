@@ -4,7 +4,7 @@
 
 ## Skills
 
-| Skill | Purpose | skills.sh |
+| Skill | Purpose | [skills.sh](https://skills.sh/jasperdevs/github-documentation-skills) |
 | --- | --- | --- |
 | `readme-generator` | Write cleaner READMEs with stronger structure, better Markdown choices, and less filler | [open](https://skills.sh/jasperdevs/github-documentation-skills/readme-generator) |
 | `changelog-generator` | Turn commits or release notes into short developer-facing changelog entries | [open](https://skills.sh/jasperdevs/github-documentation-skills/changelog-generator) |
@@ -12,6 +12,8 @@
 ## Install
 
 Install everything first:
+
+[open package on skills.sh](https://skills.sh/jasperdevs/github-documentation-skills)
 
 ```bash
 npx skills add jasperdevs/github-documentation-skills --all
