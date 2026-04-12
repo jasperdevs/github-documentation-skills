@@ -1,8 +1,10 @@
 <h1 align="center">github documentation skills</h1>
 
-<p align="center">Two Codex skills for tighter GitHub READMEs and terse changelogs.</p>
+<p align="center"><em>Two skills for tighter GitHub READMEs and terse changelogs.</em></p>
 
 This repo contains two documentation skills built for shorter, sharper GitHub docs.
+
+Package page: https://skills.sh/jasperdevs/github-documentation-skills
 
 `readme-generator` writes minimal-first READMEs with stronger structure, centered lowercase titles when they fit, and optional image placeholders that ask the user to replace them later.
 
@@ -10,16 +12,22 @@ This repo contains two documentation skills built for shorter, sharper GitHub do
 
 ## Skills
 
-| Skill | Purpose |
-| --- | --- |
-| `readme-generator` | Write cleaner READMEs with better structure, better Markdown choices, and less filler |
-| `changelog-generator` | Turn commits or release notes into short changelog entries |
+| Skill | Purpose | skills.sh |
+| --- | --- | --- |
+| `readme-generator` | Write cleaner READMEs with better structure, better Markdown choices, and less filler | [open](https://skills.sh/jasperdevs/github-documentation-skills/readme-generator) |
+| `changelog-generator` | Turn commits or release notes into short changelog entries | [open](https://skills.sh/jasperdevs/github-documentation-skills/changelog-generator) |
 
 ## Install
 
-Copy the skill folders into your Codex skills path, usually `~/.codex/skills` or `$CODEX_HOME/skills`.
+Install everything first:
 
 ```bash
-cp -r skills/documentation/readme-generator ~/.codex/skills/
-cp -r skills/automation/changelog-generator ~/.codex/skills/
+npx skills add jasperdevs/github-documentation-skills --all
+```
+
+Install one skill only if you want:
+
+```bash
+npx skills add jasperdevs/github-documentation-skills --skill readme-generator
+npx skills add jasperdevs/github-documentation-skills --skill changelog-generator
 ```
