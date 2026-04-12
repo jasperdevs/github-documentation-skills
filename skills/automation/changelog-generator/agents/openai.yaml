@@ -1,0 +1,4 @@
+interface:
+  display_name: "Changelog Generator"
+  short_description: "Draft terse, developer-facing changelog entries"
+  default_prompt: "Use $changelog-generator to turn recent work into a terse developer changelog."

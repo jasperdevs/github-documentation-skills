@@ -1,0 +1,4 @@
+interface:
+  display_name: "README Generator"
+  short_description: "Shape concise, polished GitHub README files"
+  default_prompt: "Use $readme-generator to draft a concise, polished README for this project."
