@@ -2,6 +2,8 @@
 
 Use this file as a palette, not a checklist. A strong README picks a few moves that fit the repo and leaves the rest alone.
 
+Start from the minimal shape first. Only add more when the repository truly needs it.
+
 ## Structural blocks
 
 - Centered title block with `<h1 align="center">` and a short tagline.
@@ -49,3 +51,4 @@ GitHub README files tolerate small amounts of HTML well. Use it for centered her
 - Convert weak bullet lists into a paragraph.
 - Keep the first visible screen useful without scrolling.
 - Prefer one strong example over many shallow ones.
+- Drop developer-only sections unless they are necessary for setup, contribution, or safe use.

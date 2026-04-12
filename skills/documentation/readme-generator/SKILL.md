@@ -1,11 +1,11 @@
 ---
 name: readme-generator
-description: Draft or rewrite GitHub README.md files for repositories, libraries, apps, CLIs, and internal tools. Use when Codex needs to inspect a codebase, shape a stronger README structure, center a mostly lowercase title when it fits, add image placeholders for screenshots or diagrams, and produce concise project documentation that feels edited instead of templated.
+description: Draft or rewrite GitHub README.md files for repositories, libraries, apps, CLIs, and internal tools. Use when Codex needs to inspect a codebase, shape a stronger README structure, center a mostly lowercase title when it fits, add image placeholders for screenshots or diagrams, and produce concise project documentation that stays minimal by default instead of turning into a long template.
 ---
 
 # README Generator
 
-Write README files that feel intentional. Prefer a small number of strong sections, short paragraphs, and GitHub-native formatting used with restraint.
+Write README files that feel intentional. Minimal is the default. Prefer a small number of strong sections, short paragraphs, and GitHub-native formatting used with restraint.
 
 ## Working Pass
 
@@ -14,13 +14,19 @@ Write README files that feel intentional. Prefer a small number of strong sectio
 3. Build the smallest complete README. The default order is a centered title block, a short summary, a brief overview, setup or installation, usage, and only the extra sections the repository genuinely earns.
 4. Compress the draft. Remove generic feature dumps, redundant headings, and sections that only repeat what the file tree already says.
 
+## Default Length
+
+Aim for the shortest README that still lets a new reader understand the project and start using it. Most repos do not need five long sections, a developer guide, and a roadmap in the same file.
+
+Expand only when a reader would otherwise be blocked, confused, or likely to misuse the project.
+
 ## House Style
 
 Use lowercase titles in most cases. Preserve official brand casing only when the project already treats the name as fixed.
 
 Center the title and short tagline for most GitHub-facing READMEs. HTML is fine when it improves the layout.
 
-Prefer prose over bullet spam. Use lists only when the content is genuinely list-shaped. Keep the tone technical and calm. Avoid marketing adjectives, filler claims, and long throat-clearing intros.
+Prefer prose over bullet spam. Use lists only when the content is genuinely list-shaped. Keep the tone technical and calm. Avoid marketing adjectives, filler claims, long throat-clearing intros, and essay-length explanations.
 
 Use badges, tables, alerts, details blocks, footnotes, Mermaid diagrams, and inline HTML selectively. Read [references/github-readme-patterns.md](references/github-readme-patterns.md) before reaching for them.
 
@@ -52,7 +58,7 @@ Write a short overview when the repository needs context beyond the summary line
 
 Include installation or setup only when the repository exposes real commands. Favor one happy-path example over a matrix of package managers unless the project already supports many officially.
 
-Include development or contribution notes only if the repository has a credible contributor flow. If there is no tested workflow, leave that section out rather than padding it with generic advice.
+Include development or contribution notes only if the repository has a credible contributor flow and a reader needs that information in the README. If there is no tested workflow, or if the material belongs in separate docs, leave it out.
 
 Add optional sections only when either the repository already exposes the information or a first-time reader would be blocked without it. If neither is true, leave the section out.
 
@@ -67,6 +73,7 @@ Leave explicit placeholders only for facts the repository cannot reveal on its o
 ## Avoid
 
 - Do not turn the README into a Markdown feature demo.
+- Do not write a mini-docs site when a short README would do the job.
 - Do not open with a giant feature checklist.
 - Do not mirror generic SaaS landing-page language.
-- Do not keep sections for roadmap, contributing, acknowledgments, or license unless the repository actually benefits from them.
+- Do not keep sections for development, roadmap, contributing, acknowledgments, or license unless the repository actually benefits from them.

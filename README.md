@@ -4,7 +4,7 @@
 
 This repo contains an original rewrite of two documentation-focused skills inspired by the public `claude-code-marketplace` repository. The goal is not to mirror those files. The goal is to make them stricter, cleaner, and more useful in day-to-day repo work.
 
-The `readme-generator` skill pushes toward shorter, more intentional README files. It prefers strong structure over giant section dumps, defaults to a centered mostly lowercase title when that fits, and can leave image placeholders with an explicit note telling the user to replace them later.
+The `readme-generator` skill pushes toward shorter, more intentional README files. It prefers strong structure over giant section dumps, defaults to a centered mostly lowercase title when that fits, and can leave image placeholders with an explicit note telling the user to replace them later. Minimal is the default, and developer-only sections stay out unless they are actually needed.
 
 The `changelog-generator` skill writes terse release notes for developers. It compresses noisy commit history into small, technical entries and avoids hype, padding, and copy-pasted commit subjects.
 
