@@ -1,6 +1,6 @@
 ---
 name: readme-generator
-description: Draft or rewrite GitHub README.md files for repositories, libraries, apps, CLIs, and internal tools. Use when Codex needs to inspect a codebase, shape a stronger README structure, center a mostly lowercase title when it fits, add image placeholders for screenshots or diagrams, and produce concise project documentation that stays minimal by default instead of turning into a long template.
+description: Draft or rewrite GitHub README.md files for repositories, libraries, apps, CLIs, and internal tools. Use when Codex needs to inspect a codebase, shape a stronger README structure, center a mostly lowercase project title when it fits, add image placeholders for screenshots or diagrams, and produce concise project documentation that stays minimal by default without flattening useful Markdown features like tables, alerts, or details blocks.
 ---
 
 # README Generator
@@ -22,13 +22,13 @@ Expand only when a reader would otherwise be blocked, confused, or likely to mis
 
 ## House Style
 
-Use lowercase titles in most cases. Preserve official brand casing only when the project already treats the name as fixed.
+Use lowercase for the project title when it fits the project's visual identity. Do not force every section heading to lowercase. Use normal Title Case or sentence case for section headings unless the repository already has a clear style.
 
 Center the title and short tagline for most GitHub-facing READMEs. HTML is fine when it improves the layout.
 
 Prefer prose over bullet spam. Use lists only when the content is genuinely list-shaped. Keep the tone technical and calm. Avoid marketing adjectives, filler claims, long throat-clearing intros, and essay-length explanations.
 
-Use badges, tables, alerts, details blocks, footnotes, Mermaid diagrams, and inline HTML selectively. Read [references/github-readme-patterns.md](references/github-readme-patterns.md) before reaching for them.
+Use badges, tables, alerts, details blocks, footnotes, Mermaid diagrams, and inline HTML when they make the README faster to scan or shorter overall. Read [references/github-readme-patterns.md](references/github-readme-patterns.md) before reaching for them.
 
 ## Title Block
 
@@ -59,6 +59,8 @@ Write at most one short overview paragraph when the summary line is not enough. 
 Include installation or setup only when the repository exposes real commands. Favor one happy-path example over a matrix of package managers unless the project already supports many officially.
 
 Include usage only when a reader needs an example beyond the install or run command itself.
+
+Use tables when they compress comparisons, commands, options, environments, or compatibility notes better than prose. Use alerts or details blocks when they reduce clutter or isolate caveats. Do not add Markdown flourishes that do not improve clarity.
 
 Include development or contribution notes only if the repository has a credible contributor flow and a reader needs that information in the README. If there is no tested workflow, or if the material belongs in separate docs, leave it out.
 
