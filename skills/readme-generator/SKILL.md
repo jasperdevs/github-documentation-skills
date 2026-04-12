@@ -1,6 +1,6 @@
 ---
 name: readme-generator
-description: Draft or rewrite GitHub README.md files for repositories, libraries, apps, CLIs, and internal tools. Use when Codex needs to inspect a codebase, shape a stronger README structure, center a mostly lowercase project title when it fits, add image placeholders for screenshots or diagrams, and produce concise project documentation that stays minimal by default while still using useful GitHub Markdown features such as tables, alerts, details blocks, task lists, diagrams, footnotes, images, and links when they improve clarity.
+description: Draft or rewrite GitHub README.md files for repositories, libraries, apps, CLIs, and internal tools. Use when Codex needs to inspect a codebase, shape a stronger README structure, center a mostly lowercase project title when it fits, add image placeholders for screenshots or diagrams, and produce concise project documentation that stays minimal by default while still using useful GitHub Markdown features such as badges, tables, alerts, details blocks, task lists, diagrams, footnotes, star-history charts, images, and links when they improve clarity.
 ---
 
 # README Generator
@@ -29,7 +29,7 @@ Center the title and short tagline for most GitHub-facing READMEs. HTML is fine 
 
 Prefer prose over bullet spam. Use lists only when the content is genuinely list-shaped. Keep the tone technical and calm. Avoid marketing adjectives, filler claims, long throat-clearing intros, and essay-length explanations.
 
-Use tables, alerts, details blocks, footnotes, diagrams, task lists, badges, images, and inline HTML when they make the README faster to scan or shorter overall. If a richer element does not improve comprehension, cut it.
+Use badges, tables, alerts, details blocks, footnotes, diagrams, task lists, images, star-history charts, and inline HTML when they make the README faster to scan or shorter overall. If a richer element does not improve comprehension, cut it.
 
 ## Title Block
 
@@ -63,6 +63,8 @@ Include usage only when a reader needs an example beyond the install or run comm
 
 Use tables when they compress comparisons, commands, options, environments, compatibility notes, or feature differences better than prose.
 
+Use badges when they add real signal near the top of the README, such as CI status, package version, license, coverage, or release channel. Skip vanity badge piles.
+
 Use alerts when a warning or caveat is important enough to isolate.
 
 Use details blocks when setup is optional or would otherwise bloat the default path.
@@ -72,6 +74,8 @@ Use task lists for setup checklists or short roadmaps only when checkboxes genui
 Use footnotes for small caveats that would otherwise interrupt a sentence.
 
 Use diagrams only when a workflow, architecture, or data flow is hard to explain in one paragraph.
+
+Use a star-history chart only for public repositories where project momentum or community growth is relevant. Put it near the bottom of the README, usually under a `Star History` heading, and prefer the common `star-history.com` image-link pattern.
 
 Include development or contribution notes only if the repository has a credible contributor flow and a reader needs that information in the README. If there is no tested workflow, or if the material belongs in separate docs, leave it out.
 
@@ -89,11 +93,14 @@ Leave explicit placeholders only for facts the repository cannot reveal on its o
 
 If the README uses advanced formatting, make sure each element earns its place. Rich Markdown should reduce clutter, not create it.
 
+If badges or a star-history chart are included, verify that the links resolve and that they reflect real project state rather than decorative filler.
+
 ## Avoid
 
 - Do not turn the README into a Markdown feature demo.
 - Do not write a mini-docs site when a short README would do the job.
 - Do not open with a giant feature checklist.
+- Do not stack a wall of low-signal badges across the top.
 - Do not mirror generic SaaS landing-page language.
 - Do not repeat the same information in the summary, overview, table, and usage example.
 - Do not keep sections for development, roadmap, contributing, acknowledgments, or license unless the repository actually benefits from them.
